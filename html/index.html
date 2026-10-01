@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">TMSI</a>
+        <!-- Estrutura do menu responsivo -->
+        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#paginaInicial">Página Inicial</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#topico">Tópicos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="paginaInicial" class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active slide-1">
+                <div class="hero-content">
+                    <h1>Hardware</h1>
+                    <p>Compreender parte dísica e lógica do computador</p>
+                    <a href="#sobre" class="btn-primary">Mais informações</a>
+                </div>
+            </div>
+            <div class="carousel-slide slide-2">
+                <div class="carousel-container">
+                    <h1>Design</h1>
+                    <p>Desenvolvimento frontend</p>
+                    <a href="#topico" class="btn-primary">Mais informações</a>
+                </div>
+            </div>
+            <div class="carousel-slide slide-3">
+                <div class="carousel-container">
+                    <h1>Projeto</h1>
+                    <p>Desenvolvimento Shark Tank</p>
+                    <a href="#contato" class="btn-primary">Mais informações</a>
+                </div>
+            </div>
+            <button class="carousel-btn prev-btn" id="prevBtn">
+                <span class="botao esquerda"></span>
+            </button>
+            <button class="carousel-btn next-btn" id="nextBtn">
+                <span class="botao direita"></span>
+            </button>
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+    </section>
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Hardware</h2>
+            <div class="grid-2-cols">
+                <div class="text-block">
+                    <p>Identificação recursos componentes físicos</p>
+                    <p>Como descobrir marca e modelo da placa-mãe</p>
+                </div>
+                <div class="stats-block">
+                    <div class="stat-card">
+                        <h3>33 horas</h3>
+                        <p>Carga Horária</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Segundo ano</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="topico" class="section bg-light">
+        <div class="container">
+            <h2>Tópicos da Disciplina</h2>
+            <div class="grid-3-cols">
+                <div class="card">
+                    <div class="icon">🖥️</div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Construção de sites responsivos</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📱​</div>
+                    <h3>UX/UI Design</h3>
+                    <p>Interfaces interativas para usuários</p>
+                </div>
+                <div class="card">
+                    <div class="icon">​📊​</div>
+                    <h3>Padrões Web</h3>
+                    <p>Diretrizes para desenvolvimento Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Mais informações sobre o curso</h2>
+            <form id="contatoForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Informe seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary posicaoBotao">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
